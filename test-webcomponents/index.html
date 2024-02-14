@@ -1,0 +1,35 @@
+<!--
+ * @Description: 
+ * @Author: ju.rui
+ * @Date: 2024-02-14 20:15:31
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      html,
+      body {
+        height: 100%;
+      }
+    </style>
+    <script src="./index.js"></script>
+  </head>
+  <body>
+    <div>我是外层的div</div>
+    <wu-jie name="wujie"></wu-jie>
+
+    <template id="wujie">
+      <style>
+        div {
+          background-color: red;
+          width: 100px;
+          height: 10rem;
+        }
+      </style>
+      <div>我是template里面的div</div>
+    </template>
+  </body>
+</html>
